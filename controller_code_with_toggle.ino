@@ -51,7 +51,7 @@ void setup() {
 }
 
 void loop() {
-  // ===== Read and process button as TOGGLE =====
+  //Read and process button as TOGGLE
   bool currentButtonState = digitalRead(buttonPin);  // HIGH = not pressed, LOW = pressed
 
   // Detect new press (HIGH -> LOW) with simple debounce
@@ -70,7 +70,7 @@ void loop() {
     return;
   }
 
-  // ===== Normal joystick driving =====
+  // Normal joystick driving 
   xVal = analogRead(joyXpin);
   yVal = analogRead(joyYpin);
 
@@ -133,3 +133,4 @@ void loop() {
     stopMotors();
   }
 }
+
